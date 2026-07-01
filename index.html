@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Smart To-Do List App | Task Management Dashboard - Arif Dev</title>
+
+  <meta name="description"
+    content="Arif Dev Smart To-Do List App helps you manage daily tasks, set time, track progress and boost productivity. Simple, fast and user-friendly task management tool.">
+
+  <meta name="keywords"
+    content="Arif Dev, to do list app, task manager, daily planner, task tracker, productivity tool, time management, portfolio project">
+
+  <meta name="author" content="Arif Dev">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://site1.arifdev.online/to-do-app/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Styles -->
+
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Smart To-Do List - Task Management Dashboard</h1>
+    <p class="subtitle">Organize your daily tasks, set time and stay productive with Arif Dev smart task manager.</p>
+
+    <div class="todo-container">
+
+      <!-- INPUT SECTION -->
+      <div class="input-section">
+        <input type="text" id="taskTitle" placeholder="Add a new task" required>
+        <input type="date" id="taskDate">
+
+        <div class="line">
+          <input type="time" id="taskTime">
+          <button type="button" onclick="addTask()">Add Task</button>
+        </div>
+      </div>
+
+      <!-- CLEAR BUTTON -->
+      <button class="clear-btn" id="clearTask">Clear All Tasks</button>
+
+      <!-- TASK LIST -->
+      <ul id="taskList"></ul>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
